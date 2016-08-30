@@ -1,0 +1,48 @@
+@import './commonadmin.css';
+
+body {
+	background:#f1f2f7;
+	/*font-family:"Microsoft Yahei";*/
+}
+#main {
+	width:99%;
+	height:540px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	margin: 10px auto;
+	background-color: white;
+	display: none;
+	padding-top:20px;
+}
+#main dl {
+	width:40%;
+	height:auto;
+	margin: 10px 5%;
+	float: left;
+}
+#main dl dt {
+	width:100px;
+	background: #6ccac9;
+	border-radius: 6px 0 6px 0;
+	color:#fff;
+	padding:5px;
+	margin-bottom: 10px;
+	border:1px solid #fff;
+	text-align: center;
+}
+#main dl dd {
+	color:#797979;
+	text-indent: 2em;
+	padding: 10px 5px;
+}
+#main dl dd span {
+	padding:0 5px;
+	color:#c6cad6;
+}
+#main #pv {
+	clear: both;
+	width: 98%;
+}
+#main #pv dt {
+	width:200px;
+}

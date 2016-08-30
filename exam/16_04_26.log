@@ -1,0 +1,25 @@
+[ 2016-04-26T22:00:57+08:00 ] 127.0.0.1 /exam/index.php/Home/UserSetting/images/user-default-pic.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+
+[ 2016-04-26T22:00:57+08:00 ] 127.0.0.1 /exam/index.php/Home/UserSetting/images/weixin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000257s ]
+
+[ 2016-04-26T22:00:57+08:00 ] 127.0.0.1 /exam/index.php/Home/UserSetting/images/xinlang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2016-04-26T22:00:57+08:00 ] 127.0.0.1 /exam/index.php/Home/UserSetting/images/qq.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002062s ]
+
+[ 2016-04-26T22:02:22+08:00 ] 127.0.0.1 /exam/index.php/Home/UserSetting/images/user-default-pic.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+

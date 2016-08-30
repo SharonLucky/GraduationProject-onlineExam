@@ -1,0 +1,1109 @@
+[ 2016-05-20T13:47:54+08:00 ] 127.0.0.1 /exam/admin.php/Index/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+
+[ 2016-05-20T13:47:54+08:00 ] 127.0.0.1 /exam/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000106s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/3ffd5d759f173cd3d4e9b9aea6e493d2.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013107s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013152s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000643s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000707s ]
+
+[ 2016-05-20T14:08:31+08:00 ] 127.0.0.1 /exam/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.004488s ]
+SQL: SELECT * FROM `hd_admin` WHERE `username` = 'admin' LIMIT 1   [ RunTime:0.001130s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /Users/gongrui/Documents/www/exam/Index/Admin/Controller/LoginController.class.php 第 25 行.
+SQL: UPDATE `hd_admin` SET `logintime`=1463724511,`loginip`='127.0.0.1' WHERE `id` = 2 [ RunTime:0.007237s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021826s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021876s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000475s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005838s ]
+
+[ 2016-05-20T14:08:32+08:00 ] 127.0.0.1 /exam/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000266s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000304s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000027s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008070s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000279s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000305s ]
+
+[ 2016-05-20T14:08:32+08:00 ] 127.0.0.1 /exam/admin.php/Index/copy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.005080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` LIMIT 1   [ RunTime:0.002642s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` WHERE `lock` = 1 LIMIT 1   [ RunTime:0.001524s ]
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.009912s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_paperinfo` LIMIT 1   [ RunTime:0.001106s ]
+SQL: SHOW COLUMNS FROM `hd_score` [ RunTime:0.001591s ]
+SQL: SELECT DISTINCT  `username` FROM `hd_score`  [ RunTime:0.003631s ]
+SQL: SHOW COLUMNS FROM `hd_notice` [ RunTime:0.001882s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_notice` LIMIT 1   [ RunTime:0.000258s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026871s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026919s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2016-05-20T14:08:51+08:00 ] 127.0.0.1 /exam/admin.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.003377s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.000904s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid LIMIT 0,6   [ RunTime:0.003653s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032190s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032235s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000521s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2016-05-20T14:08:53+08:00 ] 127.0.0.1 /exam/admin.php/User/sechUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+NOTIC: [8] Undefined variable: user /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010141s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000105s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000129s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000335s ]
+
+[ 2016-05-20T14:08:55+08:00 ] 127.0.0.1 /exam/admin.php/User/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000240s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000448s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.001754s ]
+SQL: SELECT * FROM `hd_admin`  [ RunTime:0.000856s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018588s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018654s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000187s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000446s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000490s ]
+
+[ 2016-05-20T14:09:04+08:00 ] 127.0.0.1 /exam/admin.php/Test/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000533s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.001892s ]
+SQL: SELECT `type` FROM `hd_paperinfo`  [ RunTime:0.001228s ]
+NOTIC: [8] Undefined index: testType /Users/gongrui/Documents/www/exam/Index/Admin/Controller/TestController.class.php 第 20 行.
+NOTIC: [8] Undefined index: testType /Users/gongrui/Documents/www/exam/Index/Admin/Controller/TestController.class.php 第 21 行.
+NOTIC: [8] Undefined index: testType /Users/gongrui/Documents/www/exam/Index/Admin/Controller/TestController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `hd_paper` [ RunTime:0.003051s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_paper` WHERE `type` = null LIMIT 1   [ RunTime:0.001980s ]
+SQL: SELECT * FROM `hd_paper` WHERE `type` = null LIMIT 0,10   [ RunTime:0.000702s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017164s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000284s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2016-05-20T14:09:06+08:00 ] 127.0.0.1 /exam/admin.php/Test/addItem.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000184s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000232s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000261s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.000522s ]
+SQL: SELECT `type` FROM `hd_paperinfo`  [ RunTime:0.000549s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021595s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000204s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-05-20T14:09:35+08:00 ] 127.0.0.1 /exam/admin.php/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000211s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000257s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000292s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007223s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007286s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000172s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000289s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000318s ]
+
+[ 2016-05-20T14:09:49+08:00 ] 127.0.0.1 /exam/admin.php/User/sechUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000113s ]
+NOTIC: [8] Undefined variable: user /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029316s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029350s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000900s ]
+
+[ 2016-05-20T16:39:37+08:00 ] 127.0.0.1 /exam/admin.php/User/sechUser.html?type=0&sech=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.001172s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.000393s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid WHERE userinfo.username LIKE '%%'  [ RunTime:0.011711s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024463s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000413s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012648s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012713s ]
+
+[ 2016-05-20T16:39:39+08:00 ] 127.0.0.1 /exam/admin.php/User/sechUser.html?type=1&sech=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.000420s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.000395s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid WHERE user.id = 0  [ RunTime:0.000285s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000097s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023185s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000121s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003885s ]
+
+[ 2016-05-20T16:39:40+08:00 ] 127.0.0.1 /exam/admin.php/User/sechUser.html?type=1&sech=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000351s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.001426s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.000413s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid WHERE user.id = 0  [ RunTime:0.000776s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000052s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010778s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000685s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000739s ]
+
+[ 2016-05-20T16:39:41+08:00 ] 127.0.0.1 /exam/admin.php/User/sechUser.html?type=1&sech=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000006s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.000478s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid WHERE user.id = 0  [ RunTime:0.000282s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000095s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017788s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000176s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000441s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000484s ]
+
+[ 2016-05-20T16:39:44+08:00 ] 127.0.0.1 /exam/admin.php/User/sechUser.html?type=0&sech=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000391s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.001124s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.000772s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid WHERE userinfo.username LIKE '%%'  [ RunTime:0.001639s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000247s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001036s ]
+
+[ 2016-05-20T16:39:51+08:00 ] 127.0.0.1 /exam/admin.php/User/sechUser.html?type=1&sech=
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000494s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.001552s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.000842s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid WHERE user.id = 0  [ RunTime:0.001124s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000104s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032923s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000199s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000241s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003995s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004847s ]
+
+[ 2016-05-20T22:24:50+08:00 ] 127.0.0.1 /exam/admin.php/Index/loginOut.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000176s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000534s ]
+
+[ 2016-05-20T22:24:50+08:00 ] 127.0.0.1 /exam/admin.php/Login/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000165s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000209s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000236s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+NOTIC: [8] Use of undefined constant login - assumed 'login' /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/3ffd5d759f173cd3d4e9b9aea6e493d2.php 第 12 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005260s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000522s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2016-05-20T22:25:00+08:00 ] 127.0.0.1 /exam/admin.php/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000238s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.025580s ]
+SQL: SELECT * FROM `hd_admin` WHERE `username` = 'gongrui' LIMIT 1   [ RunTime:0.001092s ]
+NOTIC: [8] Use of undefined constant user - assumed 'user' /Users/gongrui/Documents/www/exam/Index/Admin/Controller/LoginController.class.php 第 25 行.
+SQL: UPDATE `hd_admin` SET `logintime`=1463754300,`loginip`='127.0.0.1' WHERE `id` = 1 [ RunTime:0.001992s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000577s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000613s ]
+
+[ 2016-05-20T22:25:01+08:00 ] 127.0.0.1 /exam/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000211s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000236s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018745s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018817s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000158s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000201s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000460s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-05-20T22:25:01+08:00 ] 127.0.0.1 /exam/admin.php/Index/copy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000175s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.004109s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` LIMIT 1   [ RunTime:0.001139s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` WHERE `lock` = 1 LIMIT 1   [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.002758s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_paperinfo` LIMIT 1   [ RunTime:0.002071s ]
+SQL: SHOW COLUMNS FROM `hd_score` [ RunTime:0.001798s ]
+SQL: SELECT DISTINCT  `username` FROM `hd_score`  [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `hd_notice` [ RunTime:0.001503s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_notice` LIMIT 1   [ RunTime:0.000253s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000101s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000123s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000552s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2016-05-20T22:25:05+08:00 ] 127.0.0.1 /exam/admin.php/Index/copy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000244s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.000410s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` LIMIT 1   [ RunTime:0.000201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` WHERE `lock` = 1 LIMIT 1   [ RunTime:0.000218s ]
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.001380s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_paperinfo` LIMIT 1   [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `hd_score` [ RunTime:0.002678s ]
+SQL: SELECT DISTINCT  `username` FROM `hd_score`  [ RunTime:0.000328s ]
+SQL: SHOW COLUMNS FROM `hd_notice` [ RunTime:0.001151s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_notice` LIMIT 1   [ RunTime:0.001007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000049s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009090s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009148s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000189s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000443s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2016-05-20T22:25:07+08:00 ] 127.0.0.1 /exam/admin.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000199s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.009031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` LIMIT 1   [ RunTime:0.002992s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.001628s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid LIMIT 0,6   [ RunTime:0.003942s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000045s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033526s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033619s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000215s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001034s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005645s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005919s ]
+
+[ 2016-05-20T22:25:09+08:00 ] 127.0.0.1 /exam/admin.php/User/lockUser/id/3/lock/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000240s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.002280s ]
+SQL: UPDATE `hd_user` SET `lock`=1 WHERE `id` = 3 [ RunTime:0.001822s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010351s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010398s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000276s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000302s ]
+
+[ 2016-05-20T22:25:11+08:00 ] 127.0.0.1 /exam/admin.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000246s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000458s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000544s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.004296s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` LIMIT 1   [ RunTime:0.000925s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.000471s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid LIMIT 0,6   [ RunTime:0.002193s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038819s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038856s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000116s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000272s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000299s ]
+
+[ 2016-05-20T22:25:13+08:00 ] 127.0.0.1 /exam/admin.php/User/sechUser.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000171s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000213s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000239s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000055s ]
+NOTIC: [8] Undefined variable: user /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005592s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000082s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000102s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000251s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000275s ]
+
+[ 2016-05-20T22:25:15+08:00 ] 127.0.0.1 /exam/admin.php/User/sechUser.html?type=1&sech=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000346s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.001667s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.000458s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid WHERE user.id = 3  [ RunTime:0.001764s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000069s ]
+NOTIC: [8] Undefined index:  face /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/c18e10320b1795ceeb9b03a0062e1286.php 第 43 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017442s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017496s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.013015s ]
+INFO: [ app_end ] --END-- [ RunTime:0.014413s ]
+
+[ 2016-05-20T22:25:18+08:00 ] 127.0.0.1 /exam/admin.php/User/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000467s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000349s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.002898s ]
+SQL: SELECT * FROM `hd_admin`  [ RunTime:0.001620s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000057s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016860s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000286s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000638s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000696s ]
+
+[ 2016-05-20T22:25:20+08:00 ] 127.0.0.1 /exam/admin.php/User/addAdmin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000572s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010337s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010381s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2016-05-20T22:25:21+08:00 ] 127.0.0.1 /exam/admin.php/Test/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000287s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.004041s ]
+SQL: SELECT `type` FROM `hd_paperinfo`  [ RunTime:0.000548s ]
+NOTIC: [8] Undefined index: testType /Users/gongrui/Documents/www/exam/Index/Admin/Controller/TestController.class.php 第 20 行.
+NOTIC: [8] Undefined index: testType /Users/gongrui/Documents/www/exam/Index/Admin/Controller/TestController.class.php 第 21 行.
+NOTIC: [8] Undefined index: testType /Users/gongrui/Documents/www/exam/Index/Admin/Controller/TestController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `hd_paper` [ RunTime:0.003772s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_paper` WHERE `type` = null LIMIT 1   [ RunTime:0.001422s ]
+SQL: SELECT * FROM `hd_paper` WHERE `type` = null LIMIT 0,10   [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000100s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020801s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000114s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000267s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000293s ]
+
+[ 2016-05-20T22:25:23+08:00 ] 127.0.0.1 /exam/admin.php/Test/index.html?testType=PHP
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000289s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.000431s ]
+SQL: SELECT `type` FROM `hd_paperinfo`  [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `hd_paper` [ RunTime:0.006039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_paper` WHERE `type` = 'PHP' LIMIT 1   [ RunTime:0.003729s ]
+SQL: SELECT * FROM `hd_paper` WHERE `type` = 'PHP' LIMIT 0,10   [ RunTime:0.001208s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000049s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000156s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012421s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012487s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000582s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2016-05-20T22:25:26+08:00 ] 127.0.0.1 /exam/admin.php/Test/addItem.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000254s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.007561s ]
+SQL: SELECT `type` FROM `hd_paperinfo`  [ RunTime:0.001331s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000025s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+NOTIC: [8] Undefined index: id /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/d5935a31088e8535eedc3e7392873d13.php 第 61 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016817s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016872s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000313s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000453s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000497s ]
+
+[ 2016-05-20T22:25:27+08:00 ] 127.0.0.1 /exam/admin.php/Notice/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000206s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000450s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_notice` [ RunTime:0.001212s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_notice` LIMIT 1   [ RunTime:0.000492s ]
+SQL: SELECT * FROM `hd_notice` LIMIT 0,4   [ RunTime:0.000334s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000023s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+NOTIC: [8] A non well formed numeric value encountered /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/5ae2eb743c5adb62bdea6ec0ba71f9fc.php 第 29 行.
+NOTIC: [8] A non well formed numeric value encountered /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/5ae2eb743c5adb62bdea6ec0ba71f9fc.php 第 29 行.
+NOTIC: [8] A non well formed numeric value encountered /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/5ae2eb743c5adb62bdea6ec0ba71f9fc.php 第 29 行.
+NOTIC: [8] A non well formed numeric value encountered /Users/gongrui/Documents/www/exam/Index/Runtime/Cache/Admin/5ae2eb743c5adb62bdea6ec0ba71f9fc.php 第 29 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017695s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017746s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000188s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000493s ]
+
+[ 2016-05-20T22:25:29+08:00 ] 127.0.0.1 /exam/admin.php/Notice/addNotice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010825s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000185s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000224s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000602s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000649s ]
+
+[ 2016-05-20T22:25:31+08:00 ] 127.0.0.1 /exam/admin.php/System/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000444s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000481s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000059s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003885s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000111s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000266s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000290s ]
+
+[ 2016-05-20T22:25:34+08:00 ] 127.0.0.1 /exam/admin.php/User/editPwd.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000162s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000283s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011540s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000275s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000300s ]
+
+[ 2016-05-20T22:28:09+08:00 ] 127.0.0.1 /exam/admin.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.005833s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` LIMIT 1   [ RunTime:0.000436s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.000792s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid LIMIT 0,6   [ RunTime:0.000646s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010385s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010431s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000304s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001204s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001733s ]
+
+[ 2016-05-20T22:29:06+08:00 ] 127.0.0.1 /exam/admin.php/User/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000301s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.001134s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` LIMIT 1   [ RunTime:0.000443s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.002359s ]
+SQL: SELECT user.id AS id,user.`lock` AS `lock`,user.registime AS registime,userinfo.username AS username,userinfo.face180 AS face,userinfo.sex AS sex,userinfo.location AS location,userinfo.intro AS intro FROM hd_user user LEFT JOIN hd_userinfo userinfo ON user.id = userinfo.uid LIMIT 0,6   [ RunTime:0.002604s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000098s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027633s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027664s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000118s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000280s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000307s ]
+
+[ 2016-05-20T22:29:55+08:00 ] 127.0.0.1 /exam/admin.php/Test/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000185s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.001458s ]
+SQL: SELECT `type` FROM `hd_paperinfo`  [ RunTime:0.006559s ]
+NOTIC: [8] Undefined index: testType /Users/gongrui/Documents/www/exam/Index/Admin/Controller/TestController.class.php 第 20 行.
+NOTIC: [8] Undefined index: testType /Users/gongrui/Documents/www/exam/Index/Admin/Controller/TestController.class.php 第 21 行.
+NOTIC: [8] Undefined index: testType /Users/gongrui/Documents/www/exam/Index/Admin/Controller/TestController.class.php 第 22 行.
+SQL: SHOW COLUMNS FROM `hd_paper` [ RunTime:0.001518s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_paper` WHERE `type` = null LIMIT 1   [ RunTime:0.000578s ]
+SQL: SELECT * FROM `hd_paper` WHERE `type` = null LIMIT 0,10   [ RunTime:0.000402s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000117s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025466s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000295s ]
+
+[ 2016-05-20T22:29:58+08:00 ] 127.0.0.1 /exam/admin.php/Test/index.html?testType=JAVA
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000415s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.000821s ]
+SQL: SELECT `type` FROM `hd_paperinfo`  [ RunTime:0.000886s ]
+SQL: SHOW COLUMNS FROM `hd_paper` [ RunTime:0.005703s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_paper` WHERE `type` = 'JAVA' LIMIT 1   [ RunTime:0.001189s ]
+SQL: SELECT * FROM `hd_paper` WHERE `type` = 'JAVA' LIMIT 0,10   [ RunTime:0.000646s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000244s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018794s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018850s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000136s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000343s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000380s ]
+
+[ 2016-05-20T22:36:28+08:00 ] 127.0.0.1 /exam/admin.php/Index/copy.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_user` [ RunTime:0.001196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` LIMIT 1   [ RunTime:0.000483s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_user` WHERE `lock` = 1 LIMIT 1   [ RunTime:0.000262s ]
+SQL: SHOW COLUMNS FROM `hd_paperinfo` [ RunTime:0.002713s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_paperinfo` LIMIT 1   [ RunTime:0.000950s ]
+SQL: SHOW COLUMNS FROM `hd_score` [ RunTime:0.002291s ]
+SQL: SELECT DISTINCT  `username` FROM `hd_score`  [ RunTime:0.001842s ]
+SQL: SHOW COLUMNS FROM `hd_notice` [ RunTime:0.001821s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `hd_notice` LIMIT 1   [ RunTime:0.000222s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000067s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016974s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000153s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000191s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000489s ]
+
+[ 2016-05-20T22:42:36+08:00 ] 127.0.0.1 /exam/admin.php/User/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.006236s ]
+SQL: SELECT * FROM `hd_admin`  [ RunTime:0.000313s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034347s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034404s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000265s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001284s ]
+
+[ 2016-05-20T22:44:16+08:00 ] 127.0.0.1 /exam/admin.php/User/admin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000213s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000264s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000309s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /Users/gongrui/Documents/www/exam/ThinkPHP/Library/Think/Db/Driver/Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `hd_admin` [ RunTime:0.002814s ]
+SQL: SELECT * FROM `hd_admin`  [ RunTime:0.001071s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024045s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000193s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000461s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+

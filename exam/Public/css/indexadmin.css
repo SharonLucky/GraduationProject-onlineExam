@@ -1,0 +1,152 @@
+@import './commonadmin.css';
+
+/**********头部**********/
+#top {
+  height:88px;
+  background:url(../images/top_bg.jpg) no-repeat 0 0;
+}
+
+#top .t_title {
+  height:56px;
+  line-height:74px;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color:#fff;
+  overflow: hidden;
+  display: none;
+}
+#top .menu {
+  height: 26px;
+  overflow: hidden;
+  display: none;
+}
+#top #user {
+  height:26px;
+  float:right;
+  color: #fff;
+  margin-right: 20px;
+}
+#top #user .user_state {
+  display: block;
+  height:26px;
+  line-height:26px;
+  float: left;
+  color: #35394a;
+}
+#top #user .user_state span {
+  color:#DC6180;
+  font-weight:bold;
+}
+#top #user #login_out {
+  display: block;
+  float: left;
+  width:58px;
+  height:25px;
+  line-height: 25px;
+  margin-left:15px;
+  color:white;
+  background-color: #5cb85c;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+}
+#top #user #login_out:hover{
+  background-color: #47a447;
+}
+/**********左侧**********/
+#left {
+  width:180px;
+  float: left;
+  overflow-x:hidden;
+  overflow-y:auto;
+  /*background:#dcdcdc;
+  border-top:1px solid #BBBAB9;
+  border-right:1px solid #BBBAB9;*/
+  background:#2a3542;
+  font-family: 'Open Sans', sans-serif;
+  /*border-top:1px solid #2a3542;
+  border-right:1px solid #2a3542;
+  border-radius: 0 8px 0 0;*/
+}
+#left .nav {
+  width:180px;
+  height:40px;
+  overflow:hidden;
+  position:relative;
+  background-color: #35404d;
+  letter-spacing: 1px;
+  margin-top:15px;
+  border-radius: 8px 8px 0 0;
+}
+
+#left .nav_u {
+  height:40px;
+  line-height: 40px;
+  position:relative;
+}
+#left .pos {
+  position:relative;
+  text-indent: 2em;
+}
+#left .nav span {
+  text-decoration:none;
+  display:block;
+  /*color:#3A66B0;*/
+  color: #fff;
+  cursor: pointer;
+  font-size:14px;
+}
+#left .nav_ub {
+  width:100%;
+  height:26px;
+  position:absolute;
+  top:0px;
+  background-color:#2a3542;
+}
+#left .nav_db {
+  width:100%;
+  height:14px;
+  position:absolute;
+  bottom:0px;
+  background:#2a3542;
+}
+#left .option {
+  width: 180px;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 0;
+  background-color: #2a3542;
+  display: none;
+}
+#left .option li {
+  width: 180px;
+  height: 29px;
+  padding:5px 20px;
+  background: #35404D;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+#left .option li:last-child{
+  border-radius: 0 0 8px 8px;
+}
+#left .option li a {
+  display: block;
+  width:100%;
+  height:20px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #737B83;
+  padding:0 0 0 44px;
+  transition: all 0.3s ease;
+}
+#left .option li a:hover {
+  color: #FF6C60;
+}
+
+/**********右侧**********/
+#right {
+  float: left;
+  overflow: hidden;
+}

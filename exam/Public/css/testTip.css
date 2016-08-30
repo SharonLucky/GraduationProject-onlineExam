@@ -1,0 +1,550 @@
+/*
+1.
+2.paper_exam
+3.404page
+4.paper_list
+*/
+
+/*start*/
+.testTipWrap {
+  width: 100%;
+  margin-top: 10%;
+}
+
+.testTipWrap img {
+  width: 50%;
+  float: left;
+}
+
+.testTipWrap .testRightText {
+  width: 50%;
+  height: 200px;
+  text-align: center;
+  float: left;
+  margin-top: 15%;
+}
+
+.testTipWrap .testRightText .successBg {
+  width: 102px;
+  height: 32px;
+  margin: 1em auto;
+  background: url(../images/successBg.png) no-repeat scroll center center transparent;
+}
+
+.testTipWrap .testRightText .failBg {
+  width: 75px;
+  height: 64px;
+  margin: 1em auto;
+  background: url(../images/failBg.png) no-repeat scroll center center transparent;
+}
+
+.testTipWrap .testRightText h2 {
+  color: #f58220;
+  margin-bottom: 1em;
+}
+
+.testTipWrap .testRightText p {
+  font-size: 17px;
+  margin: 0 10px;
+  color: rgb(1, 185, 185);
+}
+
+.testTipWrap .testRightText a {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.testTipWrap .testRightText a p {
+  margin:2em auto;
+  padding-bottom:6px;
+  width:104px;
+  text-align: center;
+
+  color: #3C4049;
+}
+.testTipWrap .testRightText a:hover p {
+  border-bottom: solid 2px #999999;
+}
+/*end*/
+/*-------------------------------------------------------------------------------------*/
+
+/*start*/
+.test-title {
+  display: inline-block;
+  margin: 22px 28px 10px;
+}
+
+.test-title b {
+  font-size: 16px;
+}
+
+.testBtnGroup {
+  text-align: center;
+}
+
+.test-content {
+  text-indent: 40px;
+  margin: 30px 15px;
+}
+
+.testBtnGroup .test-btn {
+  display: inline-block;
+  margin: 30px 50px;
+}
+
+/*-------------------------------------------------------------------------------------*/
+/*onlineTest CSS start */
+.course-nav-hd {
+  font-size: 16px;
+  font-weight: 700;
+  color: #14191e;
+  border-bottom: 1px solid #d0d6d9;
+  padding: 15px 0;
+  /* height:30px;
+   vertical-align:30px;*/
+}
+
+.course-nav-row {
+  padding: 15px 0 5px;
+  border-bottom: 1px solid #edf1f2;
+}
+
+.l {
+  float: left;
+}
+
+.course-nav-row .hd {
+  width: 56px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #787d82;
+  text-align: right;
+}
+
+.course-nav-row .bd {
+  margin-left: 70px;
+}
+
+.course-nav-item {
+  display: inline-block;
+  margin: 1px 13px;
+}
+
+.course-nav-item.on a {
+  /*  background: #0083ba;*/
+  background-color: #3DBA62;
+  color: #fff;
+}
+
+.course-nav-item a {
+  display: block;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  padding: 0 6px;
+  font-size: 12px;
+  text-decoration: none;
+}
+.course-list {
+  padding: 20px 10px;
+  position: relative;
+  min-height: 500px;
+}
+.course-list ul {
+  margin: 0 -20px 0 -46px;
+}
+.course-list li {
+  background: #fff;
+  border-radius: 0 0 1px 1px;
+  float: left;
+  margin: 24px 0 8px 24px;
+  height: 250px;
+  padding: 20px 20px 0;
+  position: relative;
+  list-style: none;
+  -moz-transition: box-shadow 0.3s;
+  -webkit-transition: box-shadow 0.3s;
+  -o-transition: box-shadow 0.3s;
+  transition: box-shadow 0.3s;
+}
+.course-list li:hover{
+  /* border:2px #63c6ae solid;*/
+  /*box-shadow: 0 0 6px #63c6ae;*/
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+}
+.course-list li:hover .time-label{
+  opacity: 1;
+}
+.course-list li a{
+  text-decoration: none;
+}
+.course-list li .course-list-img {
+  width: auto;
+  height: auto;
+  max-height: 135px;
+}
+.course-list li .course-list-img {
+  overflow: hidden;
+  position: relative;
+}
+.course-list li .course-list-img img {
+  max-width: 100%;
+  min-height: 100%;
+}
+.course-list li h5 {
+  margin: 18px 0 0;
+  height: 18px;
+  line-height: 18px;
+  color: #14191e;
+  text-align: left;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.course-list li .tips {
+  font-size: 12px;
+  color: #b4bbbf;
+}
+.text-ellipsis {
+  margin: 8px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.course-list .time-label {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  height: 135px;
+  width: 230px;
+  font-size: 20px;
+  color: #fff;
+  padding: 0 3px;
+  text-align: center;
+  line-height: 135px;
+  /*visibility: hidden;*/
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  /* opacity: 1;
+  -webkit-transform: translateX(10px);
+  -ms-transform: translateX(10px);
+  transform: translateX(10px);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;*/
+}
+/* .course-list .time-label:hover{
+   opacity: 1;
+ }*/
+/*onlineTest CSS end */
+/*-------------------------------------------------------------------------------------*/
+
+/*404 start*/
+#errorBg {
+  width: 80%;
+  height: 400px;
+  background: #EAF5F9 url(../images/404.png) no-repeat 50% 50% fixed;
+}
+#errorBg .errorTag {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#errorBg .errorTag a {
+  text-decoration: none;
+}
+
+#errorBg .errorTag a:hover p{
+  color:#45b97c;
+}
+
+#errorBg .errorTag p {
+  color: #75C3BF;
+  font-size: 1.6em;
+}
+/*404 end*/
+
+/*paper_list start*/
+.iconfont {
+  font-family: "iconfont";
+  font-size: 50px;
+  font-style: normal;
+  padding: 0 10px;
+}
+.courseBox {
+  cursor: pointer;
+  display: flex;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+.courseBox:hover{
+  box-shadow: 0 0 7px 0px #b0b2ab;
+}
+.courseBox a:hover{
+  text-decoration: none;
+}
+
+.courseBox span{
+  border-left: 1px solid #ddd;
+  font-size: 24px;
+ /* flex: 1;*/
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 10px;
+  font-family: fantasy;
+  letter-spacing: 2px;
+  /*text-align: center;*/
+  color: black;
+  display: inline-block;
+  position: relative;
+  top:11px;
+}
+.listTitle{
+  margin:15px 0 20px 0;
+}
+.listTitle h4{
+  color:#5B5B5B
+}
+
+.paperItem{
+  margin:10px 5px;
+}
+.paperItem .paperItemNum{
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+  background-color: #ff8600;
+  color: white;
+  line-height: 25px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.paperItem .question_info{
+  font-size:17px;
+}
+.paperItem .answer_info{
+  color: #5B5B5B;
+  margin:12px 32px;
+}
+.paperItem .answer_info .answer{
+  margin:8px;
+}
+.paperItem .answer_info .answer span{
+  display: inline-block;
+  margin-right:8px;
+}
+
+.page{
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.page span ,.page a{
+  display: inline-block;
+  color: #428bca;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.428571429;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.page .current{
+  background-color: #eee;
+}
+.page .prev{
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+  margin-right:-4px;
+}
+.page .num{
+ /* position: relative;*/
+}
+.page .next{
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin-left:-5px;
+}
+/*paper_list end*/
+
+/*------------------------------------------*/
+/*paper_exam start*/
+.count-down {
+  text-align: center;
+  font-size: 30px;
+  background: #37BC9B;
+  color: #fff;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.paper-header {
+  height: 50px;
+  margin-bottom:8px;
+}
+
+.paper-type {
+  font-size: 20px;
+  font-weight: bold;
+  color: #009EE7;
+}
+
+.type {
+  background: #8CADCA;
+  color: #fff;
+  display: inline-block;
+  width: 100px;
+  text-align: center;
+  margin-left: 10px;
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+}
+
+#paper_now {
+  font-size: 20px;
+  color: #009EE7;
+}
+
+.paper-question {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.paper-answer {
+  display: block;
+  font-weight: normal;
+  background: #fff;
+  margin-bottom: 20px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 6px;
+  font-size: 15px;
+  padding-left: 10px;
+  border: 2px solid #fff;
+
+}
+.next_pre{
+  margin:20px 15px;
+}
+.next_pre button{
+  margin:0 12px;
+}
+/*paper_exam end*/
+
+/*----------------------------------------------------------*/
+
+/*user_score start*/
+.exam_times {
+  border-bottom: 1px solid #d0d6d9;
+  font-size: 14px;
+  color: #1f222e;
+  /*color: #787d82;*/
+  height: 56px;
+  line-height: 56px;
+}
+
+.rightItem {
+  position: relative;
+  padding-left: 20px;
+  border-left: 1px solid #d3d7da;
+  margin-top: 16px;
+}
+.dateShow{
+  position: absolute;
+  left: 0;
+  top: 20px;
+  margin-left: -64px;
+  line-height: 16px;
+  font-size: 12px;
+  color: #8a8c8f;
+
+}
+.dateShow:before{
+  content: '';
+  display: block;
+  position: absolute;
+  left: 60px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #d0d6d9;
+}
+.dateShow b{
+  font-size: 18px;
+  font-weight: normal;
+}
+.dateShow em{
+  display: block;
+  margin-top: 2px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.courseItemList{
+  background-color: #fff;
+  border-radius: 10px;
+  padding-left:20px;
+}
+.courseItemList ul{
+  list-style: none;
+}
+.courseItemList ul li{
+  position: relative;
+  padding: 24px 0;
+  border-bottom: 1px solid #eff1f0;
+}
+.courseItemList ul h3{
+  font-size: 16px;
+  color: #787d82;
+  height: 20px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  margin-top: -12px;
+}
+.courseItemList ul .scoreTip{
+  position: absolute;
+  right:96px;
+  top:28px;
+  color: #66CCCC;
+}
+.courseItemList ul .orange{
+  color:#ff8600;
+}
+.courseItemList ul h3 span{
+  margin-left:10px;
+  font-size: 20px;
+  color: #12171b;
+}
+.studyPoint{
+  padding: 2px 0 20px;
+  height: 21px;
+  color: #aab2bd;
+}
+.studyPoint .scoreNum{
+  margin:0 1px;
+  color: #cca4e3;
+
+}
+.studyPoint .scorelv{
+  margin:0 5px;
+  color: #87CEFA;
+}
+/*user_score end*/

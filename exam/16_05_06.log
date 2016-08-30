@@ -1,0 +1,55 @@
+[ 2016-05-06T23:19:21+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001359s ]
+
+[ 2016-05-06T23:19:21+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/2.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000301s ]
+
+[ 2016-05-06T23:19:21+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-05-06T23:47:26+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000283s ]
+
+[ 2016-05-06T23:47:26+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000514s ]
+
+[ 2016-05-06T23:47:27+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2016-05-06T23:47:27+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000333s ]
+
+[ 2016-05-06T23:47:48+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000473s ]
+
+[ 2016-05-06T23:47:48+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+
+[ 2016-05-06T23:48:58+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/1.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000392s ]
+
+[ 2016-05-06T23:48:58+08:00 ] 127.0.0.1 /exam/index.php/Home/Index/img/3.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000726s ]
+

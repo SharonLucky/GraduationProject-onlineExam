@@ -1,0 +1,41 @@
+input{
+  width:96%;
+  height:25px;
+}
+
+#haveType ,#noType,#select, #judge {
+  width: 3%;
+  height: 20px;
+  position: relative;
+  top: 5px;
+  left: 3px;
+}
+
+#addNewType {
+  width: 10%;
+  height: 20px;
+  display: none;
+}
+
+#postType {
+  width: 10%;
+  height: 20px;
+}
+
+#randomNum {
+  width: 10%;
+  height: 20px
+}
+#selectHaveType{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.chooseWrap{
+  margin: 15px;
+  padding-left: 3px;
+}
+.chooseWrap span{
+  display: inline-block;
+  margin:0 10px 0 0;
+}

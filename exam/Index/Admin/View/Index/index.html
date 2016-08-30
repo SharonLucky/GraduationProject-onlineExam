@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>onlineTest 后台管理中心</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/indexadmin.css"/>
+  <script type="text/javascript" src="__PUBLIC__/js/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="__PUBLIC__/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src='__PUBLIC__/js/index.js'></script>
+  <base target="iframe"/>
+</head>
+<body>
+<div id="top">
+
+  <div class='t_title'>OnlineExam 后台管理中心</div>
+  <div class='menu'>
+    <div id='user'>
+      <span class='user_state'>当前管理员：[ <span>{$Think.session.username}</span> ]</span>
+
+        <a href="{:U('loginOut')}" target='_self' id='login_out'>退出</a>
+
+    </div>
+  </div>
+</div>
+<div id='left'>
+  <div class='nav'>
+    <div class="nav_u"><span class="pos down">后台首页</span></div>
+  </div>
+  <ul class='option'>
+    <li><a href='{:U("Index/copy")}'>信息展示</a></li>
+  </ul>
+  <div class='nav'>
+    <div class="nav_u"><span class="pos down">用户管理</span></div>
+  </div>
+  <ul class='option'>
+    <li><a href='{:U("User/index")}'>系统用户</a></li>
+    <li><a href='{:U("User/sechUser")}'>系统用户检索</a></li>
+    <li><a href='{:U("User/admin")}'>后台管理员</a></li>
+    <if condition='!$_SESSION["admin"]'>
+      <li><a href='{:U("User/addAdmin")}'>添加管理员</a></li>
+    </if>
+  </ul>
+
+  <div class='nav'>
+    <div class="nav_u"><span class="pos down">试题管理</span></div>
+  </div>
+  <ul class='option'>
+    <li><a href='{:U("Test/index")}'>查看题库</a></li>
+    <li><a href='{:U("Test/addItem")}'>添加试题</a></li>
+  </ul>
+  <div class='nav'>
+    <div class="nav_u"><span class="pos down">公告管理</span></div>
+  </div>
+  <ul class='option'>
+    <li><a href='{:U("Notice/index")}'>已有公告</a></li>
+    <li><a href='{:U("Notice/addNotice")}'>添加公告</a></li>
+  </ul>
+  <div class='nav'>
+    <div class="nav_u"><span class="pos down">系统设置</span></div>
+  </div>
+  <ul class='option'>
+    <li><a href='{:U("System/index")}'>网站设置</a></li>
+    <li><a href='{:U("User/editPwd")}'>修改密码</a></li>
+  </ul>
+</div>
+<div id="right">
+  <iframe src="{:U('copy')}" frameborder="0" name='iframe'></iframe>
+</div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+*{
+  padding: 0;
+  margin: 0;
+  font-family:  Arial, "Microsoft YaHei";
+
+}
+body{
+  height:100vh;
+  overflow: hidden;
+  background: linear-gradient(135deg, #EA5C54 0%, #bb6dec 100%);
+}
+h2{
+  color: #E0E0E0;
+  margin-top: 7%;
+}
+.login {
+  width: 350px;
+  border-top: 2px solid #D8312A;
+  margin: 3% auto;
+  background: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+}
+
+.login .login_title {
+  color: #afb1be;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Gudea', sans-serif;
+  /*margin: 60px auto 50px 30px;*/
+  margin: 60px auto 50px auto;
+}
+
+.login .login_fields {
+  height: 220px;
+}
+
+.login_fields__user, .login_fields__password {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  z-index: 1;
+  left: 36px;
+  top: 8px;
+  opacity: .3;
+  color: white;
+}
+
+.login_fields input[type='text'], .login_fields input[type='password'] {
+  color: #afb1be;
+  width: 100%;
+  margin-top: -2px;
+  background: #32364a;
+  left: 0;
+  padding: 11px 65px;
+  border-top: 2px solid #393d52;
+  border-bottom: 2px solid #393d52;
+  border-right: none;
+  border-left: none;
+  font-size: 11px;
+}
+.login_fields input[type='password'] {
+  color: #DC6180 !important;
+}
+input:focus{
+  outline:none;
+}
+.login .validation {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  top: 6px;
+  opacity: 0;
+  color: whitesmoke;
+}
+
+.login_fields__submit {
+  margin:46px auto;
+  text-align: center;
+}
+.login_fields__submit input{
+  border-radius: 50px;
+  background: transparent;
+  padding: 10px 50px;
+  border: 2px solid #DC6180;
+  color: #DC6180;
+  text-transform: uppercase;
+  font-size: 11px;
+  transition-property: background,color;
+  -webkit-transition-duration: .2s;
+}
+.login_fields__submit input:hover{
+  color: white;
+  background: #DC6180;
+  cursor: pointer;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+  color: #4E546D;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #4E546D;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #4E546D;
+}
+
+

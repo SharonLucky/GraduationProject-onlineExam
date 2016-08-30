@@ -1,0 +1,58 @@
+*{
+  padding:0;
+  margin: 0;
+  font-family:"Microsoft YaHei", Arial, "Helvetica Neue",  sans-serif;
+}
+input:focus{
+  outline:none;
+}
+/*覆盖bootstrap原有圆角样式*/
+.navbar {
+  border-radius: 0px;
+}
+#example-navbar-collapse ul:first-child li{
+  margin:auto 10px;
+}
+#example-navbar-collapse ul:last-child li{
+  margin:auto 8px;
+}
+.floatLeft{
+  float:left;
+}
+.orange {
+  color: #ff8600;
+}
+.hotred{
+  color: #ff2d51;
+}
+.green {
+  color: #00ae9d;
+}
+.ft20{
+  font-size:20px;
+}
+.ft23{
+  font-size:23px;
+}
+.marLf10{
+  margin:0 10px;
+}
+.martop15{
+  margin-top:15px;
+}
+/*.blue{
+  color:#00c3b6;
+}
+.black{
+  color:#5B5B5B;
+}*/
+
+/*引入图标*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('//at.alicdn.com/t/font_1462330322_235661.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_1462330322_235661.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_1462330322_235661.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/font_1462330322_235661.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_1462330322_235661.svg#iconfont') format('svg'); /* iOS 4.1- */
+}

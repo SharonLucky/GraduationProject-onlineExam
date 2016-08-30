@@ -1,0 +1,70 @@
+[ 2016-05-04T00:13:28+08:00 ] 127.0.0.1 /exam/index.php/Home/Paper/images/fail.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000266s ]
+
+[ 2016-05-04T00:13:28+08:00 ] 127.0.0.1 /exam/index.php/Home/Paper/images/success.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000499s ]
+
+[ 2016-05-04T00:22:11+08:00 ] 127.0.0.1 /exam/index.php/Home/Paper/images/fail.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+
+[ 2016-05-04T10:31:34+08:00 ] 127.0.0.1 /exam/index.php/Home/Contact/images/contBg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000183s ]
+
+[ 2016-05-04T10:31:34+08:00 ] 127.0.0.1 /exam/index.php/Home/Contact/images/icon_dribbble.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+
+[ 2016-05-04T10:31:34+08:00 ] 127.0.0.1 /exam/index.php/Home/Contact/images/icon_project-planner.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000512s ]
+
+[ 2016-05-04T10:31:34+08:00 ] 127.0.0.1 /exam/index.php/Home/Contact/images/icon_email.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+
+[ 2016-05-04T10:31:34+08:00 ] 127.0.0.1 /exam/index.php/Home/Contact/images/icon_twitter.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000010s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000372s ]
+
+[ 2016-05-04T10:32:21+08:00 ] 127.0.0.1 /exam/index.php/Home/Contact/images/contBg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000454s ]
+
+[ 2016-05-04T10:32:48+08:00 ] 127.0.0.1 /exam/index.php/Home/Contact/images/contBg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+
+[ 2016-05-04T10:34:35+08:00 ] 127.0.0.1 /exam/index.php/Home/Paper/touxiang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+
+[ 2016-05-04T17:28:43+08:00 ] 127.0.0.1 /exam/index.php/Home/Paper/touxiang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000355s ]
+
+[ 2016-05-04T17:28:43+08:00 ] 127.0.0.1 /exam/index.php/Home/Paper/touxiang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000179s ]
+
+[ 2016-05-04T23:03:53+08:00 ] 127.0.0.1 /exam/index.php/Home/Paper/touxiang.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000418s ]
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>系统用户列表</title>
+  <link rel="stylesheet" href="__PUBLIC__/css/bootstrap.min.css">
+  <link rel="stylesheet" href="__PUBLIC__/css/commonadmin.css"/>
+  <script type="text/javascript" src='__PUBLIC__/js/jquery-1.9.1.min.js'></script>
+</head>
+<body>
+<div class='status'>
+  <span>后台管理员列表</span>
+</div>
+<table class="table">
+  <tr>
+    <th>ID</th>
+    <th>管理员名称</th>
+    <th>级别</th>
+    <th>最后登录时间</th>
+    <th>最后登录IP</th>
+    <th>账号状态</th>
+    <if condition='!$_SESSION["admin"]'>
+      <th>操作</th>
+    </if>
+  </tr>
+  <foreach name='admin' item='v'>
+    <tr>
+      <td width='50' align='center'>{$v.id}</td>
+      <td width='120' align='center'>{$v.username}</td>
+      <td align='center'>
+        <if condition='$v["admin"]'>
+          管理员
+          <else/>
+          超级管理员
+        </if>
+      </td>
+      <td align='center'>{$v.logintime|date='y-m-d H:i', ###}</td>
+      <td align='center'>{$v.loginip}</td>
+      <td width='70' align='center'>
+        <if condition='$v["lock"]'>锁定
+          <else/>
+          未锁定
+        </if>
+      </td>
+
+      <if condition='!$_SESSION["admin"]'>
+        <td width='240' align="center">
+          <if condition='$v["admin"]'>
+            <if condition='$v["lock"]'>
+              <button type="button" class="btn btn-success" style="margin-right: 5px">
+                <span class="glyphicon glyphicon-cog"></span>
+                <a href="{:U('lockAdmin', array('id' => $v['id'], 'lock' => 0))}" class='add'>解锁</a>
+              </button>
+              <else/>
+              <button type="button" class="btn btn-primary" style="margin-right: 5px">
+                <span class="glyphicon glyphicon-lock"></span>
+                <a href="{:U('lockAdmin', array('id' => $v['id'], 'lock' => 1))}" class='add'>锁定</a>
+              </button>
+            </if>
+            <button type="button" class="btn btn-warning" style="margin-right: 5px">
+              <span class="glyphicon glyphicon-cog"></span>
+              <a href='{:U("delAdmin", array("id" => $v["id"]))}' class='add'>删除</a>
+            </button>
+          </if>
+        </td>
+      </if>
+    </tr>
+  </foreach>
+</table>
+</body>
+</html>
